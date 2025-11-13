@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   console.log("📌 carrega_dados.js carregado!");
 
   try {
-    const response = await fetch("dados/dados.json");
+    const response = await fetch("./dados/dados.json");
 
     if (!response.ok) {
       throw new Error(`Erro ao carregar JSON: ${response.status}`);
