@@ -1,26 +1,38 @@
-document.addEventListener("DOMContentLoaded", () => {
-  console.log("✅ carrega_dados.js foi carregado!");
-  fetch("../dados/dados.json")
-    .then((response) => {
-      if (!response.ok) {
-        throw new Error("Erro ao carregar dados.json");
-      }
-      return response.json();
-    })
-    .then((dados) => {
-      const tabelaBody = document.getElementById("tabela-body");
+document.addEventListener("DOMContentLoaded", async () => {
+  console.log("📌 carrega_dados.js carregado!");
 
-      dados.forEach((item) => {
-        const linha = document.createElement("tr");
-        linha.innerHTML = `
-          <td>${item.nome}</td>
-          <td>${item.colecao}</td>
-          <td>${item.numero}</td>
-        `;
-        tabelaBody.appendChild(linha);
-      });
-    })
-    .catch((error) => {
-      console.error("Erro:", error);
+  try {
+    const response = await fetch("dados/dados.json");
+
+    if (!response.ok) {
+      throw new Error(`Erro ao carregar JSON: ${response.status}`);
+    }
+
+    const dados = await response.json();
+    const tabelaBody = document.getElementById("tabela-body");
+
+    if (!tabelaBody) {
+      console.error("❌ Elemento #tabela-body não encontrado!");
+      return;
+    }
+
+    tabelaBody.innerHTML = "";
+
+    dados.forEach(item => {
+      const linha = document.createElement("tr");
+
+      linha.innerHTML = `
+        <td>${item.quantidade ?? "—"}</td>
+        <td>${item.nome ?? "—"}</td>
+        <td>${item.colecao ?? "—"}</td>
+        <td>${item.numero ?? "—"}</td>
+      `;
+
+      tabelaBody.appendChild(linha);
     });
+
+    console.log(`✅ ${dados.length} registros carregados.`);
+  } catch (error) {
+    console.error("❌ Erro geral:", error);
+  }
 });
