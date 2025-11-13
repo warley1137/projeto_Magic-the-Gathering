@@ -1,27 +1,42 @@
 <!DOCTYPE html>
- <html lang="en">
- <head>
- <meta charset="UTF-8" />
- <meta name="viewport" content="width=device-width, initial-scale=1.0" />
- <title>Home</title>
- <link rel="stylesheet" href="css/style.css">
- </head>
- <body>
- <header>
- <h1 class="label_header" id="label1"><strong>Trabalho de Faculdade</strong><h1>
- <p class="label_header" id="label2">
- <strong>Wyden</strong> - Unimetrocamp,
- Campinas-SP
- </p>
-  <div class="tag_flex">
- <a href="index.html"><button class="button_header" id="Home" class="button-space">Home</button></a>
- <a href="project_01.html"><button class="button_header"id="Project" class="button-space">Project</button></a>
- <a href="contact_01.html"><button class="button_header"id="Contact" class="button-space">Contact</button></a>
- <a href="collections_01.html"><button class="button_header"id="Collections" class="button-space">Your Collections</button></a>
- </div>
- </header>
- <main>
- <section id="section_index">
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link id="tema-css" rel="stylesheet" href="css/style_1.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1 class="label_header" id="label1">
+        <strong>Trabalho de Faculdade</strong>
+      </h1>
+      <p class="label_header" id="label2">
+        <strong>Wyden</strong> - Unimetrocamp, Campinas-SP
+      </p>
+
+      <div class="tag_flex">
+        <button class="button_header" id="btn-tema">Alternar Tema</button>
+
+        <a href="index.html"
+          ><button class="button_header button-space">Home</button></a
+        >
+        <a href="project_01.html"
+          ><button class="button_header button-space">Project</button></a
+        >
+        <a href="contact_01.html"
+          ><button class="button_header button-space">Contact</button></a
+        >
+        <a href="collections_01.html"
+          ><button class="button_header button-space">
+            Your Collections
+          </button></a
+        >
+      </div>
+    </header>
+<main>
+    <section id="section_index">
  <h2>Sobre o Projeto</h2>
  <div id="container_paragraph">
  <p class="section_paragrafo">
@@ -45,12 +60,7 @@
  vendedores.
  </p>
  </div>
- 
- </section>
- <section class="cards-background">
- <div id="cards"></div>
- </section>
- </main>
+</main>
  <footer>
  <h3>Veja mais nos seus githubs</h3>
  <div class="flex_footer-space">
@@ -71,6 +81,7 @@
  </button>
  </div>
  </footer>
- 
- </body>
- </html>
+
+    <script src="js/changeStyle.js" defer></script>
+  </body>
+</html>
