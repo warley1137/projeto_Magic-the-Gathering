@@ -26,6 +26,8 @@ cpfInput.addEventListener("input", () => {
   if (cpf.replace(/\D/g, "").length === 11) {
     cpfCheck = true;
   } else {
+    msgCPF.textContent = "CPF inválido.";
+    msgCPF.style.color = "red";
     cpfCheck = false;
   }
 });

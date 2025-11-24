@@ -18,8 +18,8 @@
       <div class="tag_flex">
         <button class="button_header" id="btn-tema">Alternar Tema</button>
 
-        <a href="index.html"
-          ><button class="button_header button-space" id="Home">Home</button></a
+        <a href="../index.php">
+          <button class="button_header button-space" id="Home">Home</button></a
         >
         <a href="project_01.html"
           ><button class="button_header button-space" id="Project">
@@ -31,8 +31,8 @@
             Contact
           </button></a
         >
-        <a href="collections_01.html"
-          ><button class="button_header button-space" id="Collections">
+        <a href="collections_01.php">
+          <button class="button_header button-space" id="Collections">
             Your Collections
           </button></a
         >
@@ -40,7 +40,7 @@
     </header>
 
     <main>
-      <section>
+      <section id="section_contaction">
         <h2>Contato</h2>
         <p id="contact_label">
           Caso deseje entrar em contato conosco, é muito fácil: basta nos enviar
@@ -48,8 +48,8 @@
         </p>
 
         <div id="container_contact">
-          <div>
-            <label class="label_contato">Nome:</label>
+          <form>
+            <p>Nome:</p>
             <input
               id="nomeBody"
               class="items_contact"
@@ -57,10 +57,8 @@
               placeholder="Nome"
             />
 
-            <label class="label_contato"
-              >E-mail:
-              <p id="msgEmail"></p
-            ></label>
+            <p>E-mail:</p>
+            <p id="msgEmail"></p>
             <input
               id="emailBody"
               class="items_contact"
@@ -68,10 +66,8 @@
               placeholder="E-mail"
             />
 
-            <label class="label_contato"
-              >CPF:
-              <p id="msgCPF"></p
-            ></label>
+            <p>CPF:</p>
+            <p id="msgCPF"></p>
             <input
               id="cpfBody"
               class="items_contact"
@@ -79,7 +75,7 @@
               placeholder="000.000.000-00"
             />
 
-            <label class="label_contato">Assunto:</label>
+            <p>Assunto:</p>
             <input
               id="assuntoBody"
               class="items_contact"
@@ -87,7 +83,7 @@
               placeholder="Assunto"
             />
 
-            <label class="label_contato">Mensagem:</label>
+            <p>Mensagem:</p>
             <textarea
               class="items_contact"
               id="mensageBody"
@@ -98,7 +94,7 @@
 
             <p id="msgEnviar"></p>
             <button id="send">Enviar</button>
-          </div>
+          </form>
         </div>
       </section>
 

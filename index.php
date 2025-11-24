@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+<link id="tema-css" rel="stylesheet" href="projeto_Magic-the-Gathering-main/css/style_1.css">
+  </head>
+
+  <body>
+    <header>
+      <h1 class="label_header" id="label1">
+        <strong>Trabalho de Faculdade</strong>
+      </h1>
+
+      <p class="label_header" id="label2">
+        <strong>Wyden</strong> - Unimetrocamp, Campinas-SP
+      </p>
+
+      <div class="tag_flex">
+        <button class="button_header" id="btn-tema">Alternar Tema</button>
+
+        <a href="index.php">
+          <button class="button_header button-space">Home</button>
+        </a>
+
+        <a href="projeto_Magic-the-Gathering-main/project_01.html">
+          <button class="button_header button-space">Project</button>
+        </a>
+
+        <a href="projeto_Magic-the-Gathering-main/contact_01.html">
+          <button class="button_header button-space">Contact</button>
+        </a>
+
+        <a href="projeto_Magic-the-Gathering-main/collections_01.php">
+          <button class="button_header button-space">Your Collections</button>
+        </a>
+      </div>
+    </header>
+
+    <main>
+      <section id="section_index">
+        <h2>Sobre o Projeto</h2>
+
+        <div id="container_paragraph">
+          <p class="section_paragrafo">
+            Este projeto visa criar um site onde voce pode cadastrar seus decks
+            e coleções de cartas do jogo Magic the Gathering, além de conseguir
+            fazer venda em tempo real. Hoje em dia o único site que consegue
+            prover as informações de venda é o <strong>LigaMagic</strong>,
+            porém ele foi criado sem APIs o que dificulta a vida de integração
+            de dados dos lojistas e os obrigando a estarem sempre atualizando as
+            suas plataformas e a sua loja online no <strong>LigaMagic</strong>,
+            o que além de dificultar pode causar erros como vendas do mesmo
+            produto pela a falta de integraçção direta com o banco de dados.
+          </p>
+            <br>
+          <p>
+            Logo o intuito do projeto e oferecer um site que facilite a
+            integração de API, usando scanners ou sites já consagrados como o
+            scryfall e o edhrec que permitem o uso das propias cartas
+            cadastradas como objetos inteligentes para construção de coleções e
+            decks em outros sites, como o moxfield por exemplo,
+            simplesmente arrastando-os. Isso facilitando não só a vida dos
+            lojistas mas como do pequeno jogador e os vendedores.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <h3>Veja mais nos seus githubs</h3>
+
+      <div class="flex_footer-space">
+        <button id="Contact_Guilherme" class="button_footer">
+          <p>Guilherme</p>
+        </button>
+
+        <button id="Contact_Felipe" class="button_footer">
+          <p>Felipe</p>
+        </button>
+
+        <button id="Contact_Lucas" class="button_footer">
+          <p>Lucas</p>
+        </button>
+
+        <button id="Contact_Warley" class="button_footer">
+          <p>Warley</p>
+        </button>
+      </div>
+    </footer>
+
+    <script src="js/changeIndexSTYLE.js" defer></script>
+  </body>
+</html>
