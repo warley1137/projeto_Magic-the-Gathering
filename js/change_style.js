@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const botaoTema = document.getElementById("btn-tema");
 
   // Caminhos corretos para o index.php
-  const base = "projeto_Magic-the-Gathering-main/css/";
+  const base = "css/";
   const tema1 = "style_1.css";
   const tema2 = "style_2.css";
 

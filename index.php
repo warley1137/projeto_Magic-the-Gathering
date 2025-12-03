@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
-<link id="tema-css" rel="stylesheet" href="projeto_Magic-the-Gathering-main/css/style_1.css">
+<link id="tema-css" rel="stylesheet" href="css/style_1.css">
   </head>
 
   <body>
@@ -24,15 +24,15 @@
           <button class="button_header button-space">Home</button>
         </a>
 
-        <a href="projeto_Magic-the-Gathering-main/project_01.html">
+        <a href="project_01.html">
           <button class="button_header button-space">Project</button>
         </a>
 
-        <a href="projeto_Magic-the-Gathering-main/contact_01.html">
+        <a href="contact_01.html">
           <button class="button_header button-space">Contact</button>
         </a>
 
-        <a href="projeto_Magic-the-Gathering-main/collections_01.php">
+        <a href="collections_01.php">
           <button class="button_header button-space">Your Collections</button>
         </a>
       </div>
@@ -90,6 +90,6 @@
       </div>
     </footer>
 
-    <script src="js/changeIndexSTYLE.js" defer></script>
+    <script src="js/change_style.js" defer></script>
   </body>
 </html>
